@@ -9,13 +9,14 @@
 
 body {
     color: #f5f2f2;
-    font-family: "Roboto", sans-serif;
+    background-color: #f8f8f8;
+    font-family: "Roboto",Arial, sans-serif;
 }
 
 .container {
     margin: 0 auto;
     padding: 2rem;
-    width: 80%;
+    width: 90%;
     display: flex;
     justify-content: flex-start;
 }
@@ -177,65 +178,148 @@ a {
 
 /* Benefits Begins */
 .benefit {
-    /* margin: 0 auto; */
     width: 100%;
-    background: #f6f5f6;
+    background: #f8f8f8;
 }
 
 .left-benefit {
     flex: 1;
+    width: 100%;
+    background-image: url('../Images/about.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 .left-benefit img {
     width: 100%;
+    
 }
 
 .right-benefit {
     /* margin: 0 auto; */
-    padding: 1rem 0 0 3rem;
+    padding: 2rem 3rem;
     color: red;
     display: flex;
+    flex: 1;
     flex-direction: column;
     justify-content: space-around;
 }
 
 .upper-benefit-content {
-    width: 80%;
+    width: 100%;
 }
 
 .upper-benefit-content h4 {
     color: #03bab5;
     font-size: 1rem;
+    line-height: 1.8rem;
 }
 
 .upper-benefit-content h2 {
-    color: #201e1e;
-    font-size: 1.8rem;
+    color: #000000cc;
+    font-size: 2.875rem;
+    font-weight: 500;
+    line-height: 4rem;
+    vertical-align: baseline;
+    
+}
+
+.lower-benefit-content {
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
 }
 
 .benefit-cards {
+    width: 100%;
     display: flex;
     background-color: #fff;
-    padding: 2rem 0.5rem;
+    margin-top: 1rem;
+    padding: 3rem 2rem;
+    box-shadow: 0px 5px 10px 3px rgba(0, 0, 0, 0.055);
+
 }
+
+/* .benefit-cards:hover {
+    background-color: #03bab5;
+    color: #ffffff;
+} */
 
 .benefit-cards .ico {
     font-size: 3rem;
     color: #03bab5;
+    margin-right: 1rem;
 }
 
 .benefit-card-content {
-    line-height: 1.6;
+    line-height: 2;
 }
 
 .benefit-card-content h4 {
-    font-size: 1rem;
+    font-size: 1.3rem;
     font-weight: 600;
     color: #201e1e;
 }
 
 .benefit-card-content h6 {
-    font-size: 0.85rem;
-    font-weight: 200;
-    color: #201e1ecc;
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: #201e1e;
+}
+
+
+/* Banner Begins */
+.banner {
+    position: relative;
+    width: 100%;
+    height: 40vh;
+    background-image: url("../Images/bg_3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.banner-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #0000004b;
+    width: 100%;
+    height: 100%;
+}
+
+.success-stories {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.success-icon {
+    display: flex;
+    align-items: center;
+}
+
+.iconic {
+    font-size: 3.3rem;
+}
+
+.success-content {
+    padding: 1.2rem;
+}
+
+.success-content h1 {
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    color: #fff;
+    line-height: 40px;
+}
+
+.success-content h3 {
+    font-size: 16px;
+    line-height: 28.8px;
+    font-weight: 400;
 }
